@@ -1,2 +1,2 @@
 # getLinked
- My submission to the getLinked Hackathon
+My submission to the getLinked Hackathon

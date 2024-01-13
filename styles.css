@@ -205,7 +205,8 @@ color: #ffffff;
         .right{
     
             background-image: url(./assets/img/man-wearing-smart-glasses-touching-virtual-screen\ 1.png);
-            background-size: cover;
+            background-repeat: no-repeat;
+                background-size: contain;
             align-self: center;
             flex: 1 1 60rem;
             animation: fadeInRight 0.5s both;
@@ -329,7 +330,7 @@ color: #ffffff;
 
 
         .block_content h1{
-            font-size: 32px;
+            font-size: 3.2rem;
             font-weight: 700;
             line-height: 42.56px; 
             padding: 25px 10px 10px 10px; 
@@ -348,7 +349,11 @@ color: #ffffff;
     }
 
     .block1 {
- 
+    
+        .arrow {
+                transform: translateX(calc(100% + 170px));
+        
+            }
        
         .block-img {
             position: relative;
@@ -814,6 +819,14 @@ word-wrap: break-word */
         margin-inline: auto;
     }
 
+        .block .block1 {
+            background: red;
+    
+            .arrow {
+                width: 20px;
+    
+            }
+        }
     .faq {
         flex-direction: column;
         text-align: center;
