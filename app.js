@@ -46,3 +46,23 @@
             });
         });
     }
+
+
+    //Animation part
+
+    const infoSection = document.querySelector('.info-section');
+    const leftHidden = infoSection.querySelectorAll('.left-hidden');
+    const rightHidden = infoSection.querySelectorAll('.right-hidden');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+
+        entry.isIntersecting ? entry.target.classList.add('display') : entry.target.classList.remove('display');
+
+    })
+  });
+
+  leftHidden.forEach((el) => observer.observe(el));
+  rightHidden.forEach((el) => observer.observe(el));
+  blockItems.forEach((el) => observer.observe(el));
