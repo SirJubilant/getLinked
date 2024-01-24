@@ -50,9 +50,8 @@
 
     //Animation part
 
-    const infoSection = document.querySelector('.info-section');
-    const leftHidden = infoSection.querySelectorAll('.left-hidden');
-    const rightHidden = infoSection.querySelectorAll('.right-hidden');
+    const leftHidden = document.querySelectorAll('.left-hidden');
+    const rightHidden = document.querySelectorAll('.right-hidden');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
